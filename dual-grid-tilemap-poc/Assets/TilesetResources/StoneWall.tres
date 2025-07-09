@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="TileDefResource" load_steps=10 format=3 uid="uid://uc4efw6ph5qq"]
+
+[ext_resource type="Script" uid="uid://86i168ledkr7" path="res://Scripts/TileDefResource.cs" id="1_l0hcy"]
+[ext_resource type="Script" uid="uid://b0tsnpslrxkid" path="res://Scripts/AtlasTileData.cs" id="2_1sldr"]
+[ext_resource type="Texture2D" uid="uid://cuch0tgyrblb7" path="res://Assets/TilesetResources/DungeonWall_DarkBlue.png" id="2_kvybb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5dqc4"]
+texture = ExtResource("2_kvybb")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kvybb"]
+sources/0 = SubResource("TileSetAtlasSource_5dqc4")
+
+[sub_resource type="Resource" id="Resource_5dqc4"]
+script = ExtResource("2_1sldr")
+atlasPosition = Vector2i(0, 1)
+subset = 0
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[sub_resource type="Resource" id="Resource_f4ctl"]
+script = ExtResource("2_1sldr")
+atlasPosition = Vector2i(1, 1)
+subset = 2
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[sub_resource type="Resource" id="Resource_i5y7q"]
+script = ExtResource("2_1sldr")
+atlasPosition = Vector2i(2, 1)
+subset = 4
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[sub_resource type="Resource" id="Resource_k1psb"]
+script = ExtResource("2_1sldr")
+atlasPosition = Vector2i(3, 1)
+subset = 3
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[resource]
+script = ExtResource("1_l0hcy")
+hierarchy = 50
+tileSet = SubResource("TileSet_kvybb")
+tileSubsets = Array[Object]([SubResource("Resource_5dqc4"), SubResource("Resource_f4ctl"), SubResource("Resource_i5y7q"), SubResource("Resource_k1psb")])
+placeholderSource = 1
+metadata/_custom_type_script = "uid://86i168ledkr7"

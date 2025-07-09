@@ -1,0 +1,35 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://bysov0togbyw8"]
+
+[ext_resource type="Texture2D" uid="uid://rebgwtf2te4n" path="res://Assets/NaturalTilesCanvas.tres" id="1_630t1"]
+[ext_resource type="Texture2D" uid="uid://c1oxe4huj3jb3" path="res://Assets/StoneTilesCanvas.tres" id="2_n2f0u"]
+[ext_resource type="Texture2D" uid="uid://cu2r8ablphboc" path="res://Assets/WindowTilesCanvas.tres" id="3_div0g"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4y6ly"]
+texture = ExtResource("1_630t1")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_105va"]
+texture = ExtResource("2_n2f0u")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_56oky"]
+texture = ExtResource("3_div0g")
+0:0/0 = 0
+1:0/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_4y6ly")
+sources/1 = SubResource("TileSetAtlasSource_105va")
+sources/2 = SubResource("TileSetAtlasSource_56oky")

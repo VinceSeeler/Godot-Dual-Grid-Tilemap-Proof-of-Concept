@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="TileDefResource" load_steps=8 format=3 uid="uid://cqjwvep2cw7ms"]
+
+[ext_resource type="Script" uid="uid://86i168ledkr7" path="res://Scripts/TileDefResource.cs" id="1_v1r5v"]
+[ext_resource type="Texture2D" uid="uid://ky4bvuygmcws" path="res://Assets/TilesetResources/WindowTile_1.png" id="2_w71qk"]
+[ext_resource type="Script" uid="uid://b0tsnpslrxkid" path="res://Scripts/AtlasTileData.cs" id="3_pvt2q"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvt2q"]
+texture = ExtResource("2_w71qk")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j1atx"]
+sources/0 = SubResource("TileSetAtlasSource_pvt2q")
+
+[sub_resource type="Resource" id="Resource_w71qk"]
+script = ExtResource("3_pvt2q")
+atlasPosition = Vector2i(0, 0)
+subset = 0
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[sub_resource type="Resource" id="Resource_pvt2q"]
+script = ExtResource("3_pvt2q")
+atlasPosition = Vector2i(1, 0)
+subset = 1
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[resource]
+script = ExtResource("1_v1r5v")
+hierarchy = 50
+tileSet = SubResource("TileSet_j1atx")
+tileSubsets = Array[Object]([SubResource("Resource_w71qk"), SubResource("Resource_pvt2q")])
+placeholderSource = 2
+metadata/_custom_type_script = "uid://86i168ledkr7"

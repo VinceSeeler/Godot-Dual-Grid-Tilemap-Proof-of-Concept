@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="TileDefResource" load_steps=8 format=3 uid="uid://by0yljgjkb3ck"]
+
+[ext_resource type="Script" uid="uid://86i168ledkr7" path="res://Scripts/TileDefResource.cs" id="1_sgr05"]
+[ext_resource type="Texture2D" uid="uid://dmfhoxdkgrfrj" path="res://Assets/TilesetResources/StoneTileFloor_1.png" id="2_ehve4"]
+[ext_resource type="Script" uid="uid://b0tsnpslrxkid" path="res://Scripts/AtlasTileData.cs" id="3_grkle"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_32vch"]
+texture = ExtResource("2_ehve4")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_6g34r"]
+sources/0 = SubResource("TileSetAtlasSource_32vch")
+
+[sub_resource type="Resource" id="Resource_w7404"]
+script = ExtResource("3_grkle")
+atlasPosition = Vector2i(2, 0)
+subset = 0
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[sub_resource type="Resource" id="Resource_sgwn7"]
+script = ExtResource("3_grkle")
+atlasPosition = Vector2i(3, 0)
+subset = 1
+metadata/_custom_type_script = "uid://b0tsnpslrxkid"
+
+[resource]
+script = ExtResource("1_sgr05")
+hierarchy = 49
+tileSet = SubResource("TileSet_6g34r")
+tileSubsets = Array[Object]([SubResource("Resource_w7404"), SubResource("Resource_sgwn7")])
+placeholderSource = 1
+metadata/_custom_type_script = "uid://86i168ledkr7"

@@ -1,0 +1,6 @@
+[gd_resource type="CanvasTexture" load_steps=2 format=3 uid="uid://rebgwtf2te4n"]
+
+[ext_resource type="Texture2D" uid="uid://cu5nfdk2lcwp1" path="res://Assets/PlaceholderTiles_Natural.png" id="1_7wdrp"]
+
+[resource]
+diffuse_texture = ExtResource("1_7wdrp")
