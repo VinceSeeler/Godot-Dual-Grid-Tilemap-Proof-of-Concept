@@ -73,6 +73,10 @@ namespace DualGridTilemaps
             displayTileMapLayer4.ZAsRelative = true;
             displayTileMapLayer4.CollisionEnabled = false;
             displayTileMapLayer4.NavigationEnabled = false;
+            displayTileMapLayer1.Position = GlobalPosition - new Vector2(8, 8); 
+            displayTileMapLayer2.Position = GlobalPosition - new Vector2(8, 8);
+            displayTileMapLayer3.Position = GlobalPosition - new Vector2(8, 8);
+            displayTileMapLayer4.Position = GlobalPosition - new Vector2(8, 8);
         }
         public override void _Ready()
         {
