@@ -16,3 +16,6 @@ In the TileDefResource you must specify the Atlas you are using (PlaceholderSour
 
 The main limitation of this system is that it is quite expensive to determine the draw tiles of large TileMaps. If anybody has recommendations about how to improve  the system I would be glad to hear it. 
 A system for creating Dual-Grid Tilemaps in the Godot Game Engine
+
+Edit 2025-07-11
+In translating this from the original project I forgot to re-add the offset of the display grid. This has been fixed
